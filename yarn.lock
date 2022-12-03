@@ -15,6 +15,16 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@adventofcode-2022-node/elves_rucksack@workspace:packages/elves_rucksack":
+  version: 0.0.0-use.local
+  resolution: "@adventofcode-2022-node/elves_rucksack@workspace:packages/elves_rucksack"
+  dependencies:
+    "@types/node": 18.11.10
+    ts-node: 10.9.1
+    typescript: 4.9.3
+  languageName: unknown
+  linkType: soft
+
 "@adventofcode-2022-node/elves_shifumi@workspace:packages/elves_shifumi":
   version: 0.0.0-use.local
   resolution: "@adventofcode-2022-node/elves_shifumi@workspace:packages/elves_shifumi"
