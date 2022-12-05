@@ -28,13 +28,7 @@ async function solution() {
     );
   }, []);
 
-  const top3 = [];
-
-  while (top3.length !== 3) {
-    const top = result.indexOf(Math.max(...result));
-    top3.push(result[top]);
-    result.splice(top, 1);
-  }
+  const top3 = result.sort((a, b) => b - a).slice(0, 3);
 
   const finalResult = top3.reduce((prev, next) => prev + next, 0);
   console.log(finalResult);
