@@ -24,6 +24,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/elves_cleanup"\
       },\
       {\
+        "name": "@adventofcode-2022-node/elves_no_space_left",\
+        "reference": "workspace:packages/elves_no_space_left"\
+      },\
+      {\
         "name": "@adventofcode-2022-node/elves_rucksack",\
         "reference": "workspace:packages/elves_rucksack"\
       },\
@@ -45,6 +49,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "fallbackExclusionList": [\
       ["@adventofcode-2022-node/elves_calories", ["workspace:packages/elves_calories"]],\
       ["@adventofcode-2022-node/elves_cleanup", ["workspace:packages/elves_cleanup"]],\
+      ["@adventofcode-2022-node/elves_no_space_left", ["workspace:packages/elves_no_space_left"]],\
       ["@adventofcode-2022-node/elves_rucksack", ["workspace:packages/elves_rucksack"]],\
       ["@adventofcode-2022-node/elves_shifumi", ["workspace:packages/elves_shifumi"]],\
       ["@adventofcode-2022-node/elves_supply_stack", ["workspace:packages/elves_supply_stack"]],\
@@ -91,6 +96,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/elves_cleanup/",\
           "packageDependencies": [\
             ["@adventofcode-2022-node/elves_cleanup", "workspace:packages/elves_cleanup"],\
+            ["@types/node", "npm:18.11.10"],\
+            ["ts-node", "virtual:53ea610515652479f5edae48598a7e52b147efe09e0af917fa9c3d30c0a7fa4be0066321b2f0bd931127e31ac4d3e136ddf4a1758fbad6eee9f6a1193c5c58f7#npm:10.9.1"],\
+            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d73830"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@adventofcode-2022-node/elves_no_space_left", [\
+        ["workspace:packages/elves_no_space_left", {\
+          "packageLocation": "./packages/elves_no_space_left/",\
+          "packageDependencies": [\
+            ["@adventofcode-2022-node/elves_no_space_left", "workspace:packages/elves_no_space_left"],\
             ["@types/node", "npm:18.11.10"],\
             ["ts-node", "virtual:53ea610515652479f5edae48598a7e52b147efe09e0af917fa9c3d30c0a7fa4be0066321b2f0bd931127e31ac4d3e136ddf4a1758fbad6eee9f6a1193c5c58f7#npm:10.9.1"],\
             ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d73830"]\
