@@ -40,6 +40,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/elves_supply_stack"\
       },\
       {\
+        "name": "@adventofcode-2022-node/elves_trees",\
+        "reference": "workspace:packages/elves_trees"\
+      },\
+      {\
         "name": "@adventofcode-2022-node/elves_tuning_trouble",\
         "reference": "workspace:packages/elves_tuning_trouble"\
       }\
@@ -53,6 +57,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@adventofcode-2022-node/elves_rucksack", ["workspace:packages/elves_rucksack"]],\
       ["@adventofcode-2022-node/elves_shifumi", ["workspace:packages/elves_shifumi"]],\
       ["@adventofcode-2022-node/elves_supply_stack", ["workspace:packages/elves_supply_stack"]],\
+      ["@adventofcode-2022-node/elves_trees", ["workspace:packages/elves_trees"]],\
       ["@adventofcode-2022-node/elves_tuning_trouble", ["workspace:packages/elves_tuning_trouble"]],\
       ["adventofcode-2022-node", ["workspace:."]]\
     ],\
@@ -144,6 +149,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/elves_supply_stack/",\
           "packageDependencies": [\
             ["@adventofcode-2022-node/elves_supply_stack", "workspace:packages/elves_supply_stack"],\
+            ["@types/node", "npm:18.11.10"],\
+            ["ts-node", "virtual:53ea610515652479f5edae48598a7e52b147efe09e0af917fa9c3d30c0a7fa4be0066321b2f0bd931127e31ac4d3e136ddf4a1758fbad6eee9f6a1193c5c58f7#npm:10.9.1"],\
+            ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d73830"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["@adventofcode-2022-node/elves_trees", [\
+        ["workspace:packages/elves_trees", {\
+          "packageLocation": "./packages/elves_trees/",\
+          "packageDependencies": [\
+            ["@adventofcode-2022-node/elves_trees", "workspace:packages/elves_trees"],\
             ["@types/node", "npm:18.11.10"],\
             ["ts-node", "virtual:53ea610515652479f5edae48598a7e52b147efe09e0af917fa9c3d30c0a7fa4be0066321b2f0bd931127e31ac4d3e136ddf4a1758fbad6eee9f6a1193c5c58f7#npm:10.9.1"],\
             ["typescript", "patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d73830"]\
